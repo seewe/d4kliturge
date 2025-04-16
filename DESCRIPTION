@@ -1,0 +1,19 @@
+Package: liturge
+Title: Collection of liturgical songs from evangelical churches
+Version: 0.0.1
+Authors@R: 
+    person("Sergio", "Ewane Ebouele", , "info@dataforknow.com", role = c("aut", "cre"))
+Description: Collection of liturgical songs from evangelical churches.
+License: MIT + file LICENSE
+Imports: 
+    config,
+    golem,
+    shiny
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
