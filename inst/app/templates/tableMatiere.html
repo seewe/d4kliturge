@@ -1,0 +1,77 @@
+<!-- brand bar -->
+<div class="cover-div" style="border-radius: 0 0 50px 50px; margin: 0%">
+  <div
+    style="
+      padding-top: 120px;
+      padding-bottom: 00px;
+      margin: 0%;
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.32),
+        rgba(247, 156, 82, 0.87) 100%
+      );
+    "
+  >
+    <h2
+      class="card-title text-center fw-bold py-2 rounded rounded-pill"
+      style="
+        margin: 0 20%;
+        color: rgb(0, 0, 0);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.6) 10%,
+          rgb(255, 255, 255) 60%,
+          rgba(255, 255, 255, 0.6) 95%
+        );
+      "
+    >
+      LISTE DES CHANTS
+    </h2>
+  </div>
+</div>
+
+<div class="justify-content-center" id="taMatPage" style="margin: 20px 0 80px">
+  {% for ch_cat, ch_list in data_template.chants_tabmat_data %}
+  <h4
+    class="text-center my-5 mx-4 fw-bold p-2 border border-0 shadow bg-light"
+    style="
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.12),
+        rgba(247, 156, 82, 0.9) 80%
+      );
+      border-radius: 0 0 30px 30px;
+    "
+  >
+    {{ch_cat}}
+  </h4>
+  <div class="row g-1 justify-content-center">
+    {%for ch_number in ch_list %}
+    <div
+      class="col-2 text-center border border-0 rounded rounded-2 shadow-sm m-1"
+      style="background: rgba(247, 199, 159, 0.322)"
+    >
+      <a
+        href="#!/chant"
+        type="button"
+        class="text-body text-decoration-none fw-bold tbm-item-link"
+      >
+        <div
+          class="tbm-item p-1 tbm-item-number border border-0"
+          data-value="{{ch_number}}"
+        >
+          {{ch_number}}
+        </div>
+      </a>
+    </div>
+    {%endfor%}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="text-center rounded rounded-pill bg-transparent" id="copyright">
+  <a href="#!/confidentialite" class="btn btn-transparent fw-bold copyright">
+    <i class="bi bi-shield-lock-fill"></i>
+    Confidentialité
+  </a>
+</div>

@@ -4,28 +4,27 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
-#' @noRd 
+#' @noRd
 #'
-#' @importFrom shiny NS tagList 
+#' @importFrom shiny NS tagList
 mod_chants_ui <- function(id) {
-  ns <- NS(id)
-  tagList(
- 
-  )
+  ns <- shiny::NS(id)
+  shiny::uiOutput(ns("html_content"))
 }
-    
+
 #' chants Server Functions
 #'
-#' @noRd 
-mod_chants_server <- function(id){
-  moduleServer(id, function(input, output, session){
-    ns <- session$ns
- 
+#' @noRd
+mod_chants_server <- function(input, output, session, chant_html, RV = rv) {
+  ns <- session$ns
+  output$html_content <- shiny::renderUI({
+    req(RV()$ch_selected)
+    HTML(chant_html[[RV()$ch_selected]])
   })
 }
-    
+
 ## To be copied in the UI
-# mod_chants_ui("chants_1")
-    
+# callModule(mod_chants_ui, "chants_1")
+
 ## To be copied in the server
-# mod_chants_server("chants_1")
+# callModule(mod_chants_server, "chants_1")

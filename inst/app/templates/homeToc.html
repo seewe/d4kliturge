@@ -1,0 +1,72 @@
+<!-- preface -->
+<a href="#!/preface" class="text-body text-decoration-none emaill"
+  ><div class="card bg-transparent mb-3 shadow">
+    <i
+      class="bi bi-journal-text position-absolute text-dark"
+      style="font-size: 4rem; top: 0px; right: 20px; opacity: 0.15"
+    ></i>
+    <div class="card-body">
+      <h5 class="card-title fw-bold emaill">PRÉFACE</h5>
+      <p class="card-text">Peuple de Dieu, il ...</p>
+    </div>
+  </div>
+</a>
+
+<!-- année liturgique -->
+
+<a href="#!/anneeliturgique" class="text-body text-decoration-none emaill">
+  <div class="card bg-transparent mb-3 shadow">
+    <i
+      class="bi bi-calendar3 position-absolute text-dark"
+      style="font-size: 4rem; top: 0px; right: 20px; opacity: 0.15"
+    ></i>
+    <div class="card-body">
+      <h5 class="card-title fw-bold emaill">ANNÉE LITURGIQUE</h5>
+      <p class="card-text">Temps de l'avant et ...</p>
+    </div>
+  </div>
+</a>
+
+<!-- liste chant -->
+
+<a href="#!/tabledematiere" class="text-body text-decoration-none emaill">
+  <div class="card bg-transparent mb-3 shadow">
+    <i
+      class="bi bi-music-note-list position-absolute text-dark"
+      style="font-size: 4rem; top: 0px; right: 20px; opacity: 0.15"
+    ></i>
+    <div class="card-body">
+      <h5 class="card-title fw-bold emaill">LISTE DES CHANTS</h5>
+      <p class="card-text">
+        {%for i in [1,2,3,4] %}
+        <span
+          class="border border-warning rounded px-2 mx-1 fs-6"
+          style="background: rgba(247, 156, 82, 0.25)"
+          >{{i}}</span
+        >
+        {% endfor %}
+        <span
+          class="border border-warning rounded px-2 mx-1 fs-6"
+          style="background: rgba(247, 156, 82, 0.25)"
+          >...</span
+        >
+      </p>
+    </div>
+  </div>
+</a>
+
+<!-- politique confidentiel -->
+<a href="#!/confidentialite" class="text-body text-decoration-none emaill">
+  <div class="card bg-transparent mb-3 shadow">
+    <div class="card-body">
+      <h5 class="card-title fw-bold emaill">CONFIDENTIALITÉ</h5>
+      <p class="card-text text-body">
+        <strong>Liturge</strong> est developpé par ...
+      </p>
+    </div>
+    <i
+      class="bi bi-shield-lock-fill position-absolute text-dark"
+      style="font-size: 4rem; top: 0px; right: 20px; opacity: 0.15"
+    ></i>
+  </div>
+</a>

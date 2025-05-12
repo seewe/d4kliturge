@@ -3,14 +3,36 @@
 #' @param request Internal parameter for `{shiny}`.
 #'     DO NOT REMOVE.
 #' @import shiny
+#' @import htmltools
+#' @import jinjar
 #' @noRd
 app_ui <- function(request) {
-  tagList(
+  htmltools::tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fluidPage(
-      golem::golem_welcome_page() # Remove this line to start building your UI
+    shiny.router::router_ui(
+      shiny.router::route("/", mod_home_ui("home_1")),
+      shiny.router::route(
+        "tabledematiere",
+        mod_tablematiere_ui("tablematiere_1")
+      ),
+      shiny.router::route(
+        "chant",
+        mod_chants_ui("chants_1")
+      ),
+      shiny.router::route(
+        "preface",
+        mod_preface_ui("preface_1")
+      ),
+      shiny.router::route(
+        "anneeliturgique",
+        mod_anneeLiturgique_ui("anneeLiturgique_1")
+      ),
+      shiny.router::route(
+        "confidentialite",
+        mod_politique_ui("politique_1")
+      )
     )
   )
 }
@@ -24,18 +46,18 @@ app_ui <- function(request) {
 #' @importFrom golem add_resource_path activate_js favicon bundle_resources
 #' @noRd
 golem_add_external_resources <- function() {
-  add_resource_path(
-    "www",
-    app_sys("app/www")
-  )
+  golem::add_resource_path("www", app_sys("app/www"))
+  golem::add_resource_path("templates", app_sys("app/templates"))
 
-  tags$head(
+  htmltools::tags$head(
     favicon(),
     bundle_resources(
       path = app_sys("app/www"),
-      app_title = "d4kliturge"
+      app_title = "Liturge"
+    ),
+    bundle_resources(
+      path = app_sys("app/templates"),
+      app_title = "Liturge"
     )
-    # Add here other external resources
-    # for example, you can add shinyalert::useShinyalert()
   )
 }

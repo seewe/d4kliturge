@@ -1,0 +1,37 @@
+<div class="bg-transparent p-0">
+  <div class="d-flex flex-row bd-highlight mx-5 mb-2">
+    <a
+      id="prevBtn"
+      href="#!/chant"
+      class="btn flex-fill bd-highlight shadow ch-nav-btn fw-bold"
+      data-value="{{data_template.ch_prev}}"
+      style="
+        background: linear-gradient(
+          90deg,
+          rgb(247, 156, 82) 20%,
+          rgb(247, 156, 82) 90%
+        );
+        border-radius: 0 0 0 30px;
+      "
+    >
+      <i class="bi bi-caret-left-fill"></i> {{data_template.ch_prev_label}}
+    </a>
+    <div class="bg-transparent flex-fill bd-highlight border border-0"></div>
+    <a
+      id="nextBtn"
+      href="#!/chant"
+      class="btn flex-fill bd-highlight shadow ch-nav-btn fw-bold"
+      data-value="{{data_template.ch_next}}"
+      style="
+        background: linear-gradient(
+          90deg,
+          rgb(247, 156, 82) 20%,
+          rgb(247, 156, 82) 90%
+        );
+        border-radius: 0 0 30px 0;
+      "
+    >
+      {{data_template.ch_next_label}} <i class="bi bi-caret-right-fill"></i>
+    </a>
+  </div>
+</div>

@@ -15,13 +15,21 @@
 attachment::create_renv_for_dev(
   dev_pkg = c(
     "jinjar",
-    "shiny"
+    "shiny",
+    "htmltools",
+    "shiny.router"
   )
 )
 
 attachment::create_renv_for_prod(
-  dev_pkg = c()
+  dev_pkg = c(
+    "jinjar",
+    "shiny",
+    "htmltools",
+    "shiny.router"
+  )
 )
+
 
 ## Dependencies ----
 ## Amend DESCRIPTION with dependencies read from package code parsing

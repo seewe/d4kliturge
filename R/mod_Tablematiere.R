@@ -4,28 +4,34 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
-#' @noRd 
+#' @noRd
 #'
-#' @importFrom shiny NS tagList 
-mod_Tablematiere_ui <- function(id) {
-  ns <- NS(id)
-  tagList(
- 
-  )
+#' @importFrom shiny NS tagList
+mod_tablematiere_ui <- function(id) {
+  ns <- shiny::NS(id)
+  shiny::uiOutput(ns("html_content"))
 }
-    
+
 #' Tablematiere Server Functions
 #'
-#' @noRd 
-mod_Tablematiere_server <- function(id){
-  moduleServer(id, function(input, output, session){
-    ns <- session$ns
- 
+#' @noRd
+mod_tablematiere_server <- function(input, output, session) {
+  ns <- session$ns
+  output$html_content <- shiny::renderUI({
+    html_content <- render_jinja_template(
+      "pageTableMatiere.html",
+      data = list(
+        chants_tabmat_data = chants_tabmat_data,
+        search_chant_title = search_chant_title
+      )
+    )
+
+    HTML(html_content)
   })
 }
-    
+
 ## To be copied in the UI
-# mod_Tablematiere_ui("Tablematiere_1")
-    
+# callModule(mod_tablematiere_ui, "tablematiere_1")
+
 ## To be copied in the server
-# mod_Tablematiere_server("Tablematiere_1")
+# callModule(mod_tablematiere_server, "tablematiere_1")
