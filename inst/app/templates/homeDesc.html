@@ -1,0 +1,78 @@
+<!-- brand bar -->
+<div class="cover-div">
+  <div
+    style="
+      padding-top: 150px;
+      padding-bottom: 100px;
+      margin: 0%;
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.32),
+        rgba(247, 156, 82, 0.87) 100%
+      );
+    "
+  >
+    <div class="row g-1" style="margin: 0%">
+      <div class="col-8 p-0">
+        <h2 class="card-title text-center fw-bold pt-3">RECEUIL DE CHANTS</h2>
+        <h4 class="card-title text-center fw-bold pt-2">liturgiques</h4>
+      </div>
+      <div class="col-4 p-0">
+        <img
+          src="../www/img/liturgeico1.png"
+          alt="d4kliturge"
+          width="100"
+          height="100"
+          class="rounded rounded-3"
+        />
+      </div>
+    </div>
+    <div
+      class="text-center rounded rounded-pill text-white mx-5 text-justify-content"
+      id="don"
+    >
+      <a href="#!/" class="btn fw-bold">
+        <i class="bi bi-box2-heart"></i>
+        <i class="bi bi-cash-stack"></i>
+        Faire un don
+        <i class="bi bi-balloon-heart"></i>
+        <i class="bi bi-emoji-heart-eyes-fill"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Text -->
+<div class="container" id="pageHome">
+  <div class="card border border-0">
+    <div class="card-body">
+      <p class="card-text mt-3 mb-4" style="text-align: justify">
+        Ce recueil de chants liturgiques est mis sous format numérique pour
+        faciliter l’accès à la parole de Dieu. Ce projet bénévole marque notre
+        attachement à la parole de Dieu et à l’évangélisation à travers les
+        chants réligieux. Nous sommes heureux d’apporter notre contribution à la
+        grande mission d’évangélisation. Nous restons ouverts à tous vos
+        commentaires pour l’amélioration de ce projet. N’hésitez pas de nous
+        <a
+          href="mailto:eebouele@gmail.com"
+          class="emaill text-decoration-none fw-bold"
+          >écrire</a
+        >.
+      </p>
+      <!--Table of content-->
+      {% include "homeToc.html" %}
+      <div
+        class="text-center m-5 rounded rounded-pill bg-transparent"
+        id="copyright"
+      >
+        <a
+          href="https://seeweapps-dataforknow.share.connect.posit.cloud/_w_00c8dae900d8452a92d80933972d120a/#!/"
+          class="btn btn-transparent fw-bold"
+        >
+          <img src="../www/img/d4kico.png" alt="d4k" width="40" height="40" />
+          Data For Know
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

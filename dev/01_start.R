@@ -28,7 +28,7 @@ golem::fill_desc(
     email = "info@dataforknow.com", # Your email
     role = c("aut", "cre") # Your role (here author/creator)
   ),
-  repo_url = NULL, # The URL of the GitHub repo (optional),
+  repo_url = "https://github.com/seewe/d4kliturge", # The URL of the GitHub repo (optional),
   pkg_version = "0.0.1", # The version of the package containing the app
   set_options = TRUE # Set the global golem options
 )

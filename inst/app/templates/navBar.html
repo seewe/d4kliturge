@@ -1,0 +1,101 @@
+<div
+  class="navbar navbar-expand d-lg-block fixed-top shadow-sm"
+  style="
+    z-index: 2000;
+    background: linear-gradient(
+      90deg,
+      rgb(247, 156, 82) 20%,
+      rgba(29, 236, 198, 0.048) 60%,
+      rgb(247, 156, 82) 90%
+    );
+  "
+>
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a
+      class="navbar-brand nav-link text-body text-decoration-none fw-bold"
+      href="#!/"
+      onclick="scrollToHomeSection(event)"
+    >
+      <img src="../www/img/liturgeico1.png" alt="d4k" width="32" height="32" />
+      <strong>LITURGE</strong>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarPrincipal">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" href="#!/"
+            ><strong></strong
+          ></a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav list-inline">
+        <!-- Search bar -->
+        <li>
+          <div class="input-group">
+            <a
+              href="#!/"
+              class="btn-sm btn-white border border-0 rounded rounded-end rounded-3 refresh-app fw-bold fs-3"
+              style="
+                background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.32),
+                  rgba(255, 255, 255, 0.32) 100%
+                );
+              "
+            >
+              <i class="bi bi-arrow-counterclockwise text-dark"></i>
+            </a>
+            <input
+              type="text"
+              style="
+                background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.32),
+                  rgba(255, 255, 255, 0.32) 100%
+                );
+              "
+              class="form-control border border-0 rounded rounded-start rounded-3 searchInput fw-bold fs-6"
+              list="chantList"
+              placeholder="Chercher un chant . . ."
+            />
+            <a
+              href="#!/chant"
+              class="btn-sm btn-white border border-0 rounded rounded-end rounded-3 searchChant fw-bold fs-3"
+              style="
+                background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.32),
+                  rgba(255, 255, 255, 0.32) 100%
+                );
+              "
+            >
+              <i class="bi bi-search fw-bold text-dark"></i>
+            </a>
+            {% include "searchOptions.html" %}
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Bind this once, not inside the click handler
+  $(".searchInput").on("change", function () {
+    const currentVal = $(this).val();
+    $(".searchInput").val(currentVal); // update all of the same class
+  });
+
+  // Click handler for chant search
+  $(".searchChant").on("click", function () {
+    const ch_number_search = $("#home_1-html_content .searchInput").val();
+    Shiny.setInputValue("chant_clicked", ch_number_search);
+  });
+
+  // Refresh app
+  $(".refresh-app").on("click", function () {
+    $(".searchInput").val("");
+  });
+</script>

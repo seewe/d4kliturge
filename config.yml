@@ -1,0 +1,47 @@
+default:
+  number_chant: 208
+  salutation_chant: 35
+  adoration_chant: 65
+  repentance_chant: 85
+  parole_grace_chant: 120
+  loi_de_Dieu_chant: 143
+  confession_foi_chant: 151
+  avent_noel_chant: 164
+  passion_paques_chant: 174
+  ascension_pentecote_chant: 178
+  sainte_cene_chant: 182
+  louange_divers_chant: 196
+  offrande_chant: 202
+  chant_nuptiaux: 208
+
+development:
+  number_chant: 208
+  salutation_chant: 35
+  adoration_chant: 65
+  repentance_chant: 85
+  parole_grace_chant: 120
+  loi_de_Dieu_chant: 143
+  confession_foi_chant: 151
+  avent_noel_chant: 164
+  passion_paques_chant: 174
+  ascension_pentecote_chant: 178
+  sainte_cene_chant: 182
+  louange_divers_chant: 196
+  offrande_chant: 202
+  chant_nuptiaux: 208
+
+production:
+  number_chant: 208
+  salutation_chant: 35
+  adoration_chant: 65
+  repentance_chant: 85
+  parole_grace_chant: 120
+  loi_de_Dieu_chant: 143
+  confession_foi_chant: 151
+  avent_noel_chant: 164
+  passion_paques_chant: 174
+  ascension_pentecote_chant: 178
+  sainte_cene_chant: 182
+  louange_divers_chant: 196
+  offrande_chant: 202
+  chant_nuptiaux: 208

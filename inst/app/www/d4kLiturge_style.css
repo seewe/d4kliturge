@@ -1,0 +1,99 @@
+@keyframes pulsecopy {
+  0% { box-shadow: 0px 5px 0 1px rgba(247, 156, 82, 0.22); }
+  10% { box-shadow: 0px 5px 0 5px rgba(247, 156, 82, 0.20); }
+  20% { box-shadow: 0px 5px 0 10px rgba(247, 156, 82, 0.18); }
+  30% { box-shadow: 0px 5px 0 15px rgba(247, 156, 82, 0.16); }
+  40% { box-shadow: 0px 5px 0 20px rgba(247, 156, 82, 0.14); }
+  50% { box-shadow: 0px 5px 0 25px rgba(247, 156, 82, 0.12); }
+  60% { box-shadow: 0px 5px 0 30px rgba(247, 156, 82, 0.10); }
+  70% { box-shadow: 0px 5px 0 35px rgba(247, 156, 82, 0.09); }
+  80% { box-shadow: 0px 5px 0 40px rgba(247, 156, 82, 0.08); }
+  90% { box-shadow: 0px 5px 0 45px rgba(247, 156, 82, 0.07); }
+  100% { box-shadow: 0px 5px 0 50px rgba(247, 156, 82, 0.01); }
+}
+
+@media (min-width: 768px) {
+    .offcanvas-custom {
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .offcanvas-custom {
+      width: 40%;
+    }
+  }
+  
+  .blur-bg {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  body{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  #copyright{
+    border: 0px solid rgba(255, 115, 1, 0.36);
+    animation: pulsecopy 3.5s ease-in infinite;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+  #don{
+    border: 1px solid rgba(255, 115, 1, 0.36);
+    animation: pulsecopy 1.5s ease-in infinite;
+    margin-top: 30px;
+    background-color: antiquewhite;
+}
+
+.hovermenu:hover {
+  color: #000000 !important;
+  border-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-menu-active{
+  color: #000000 !important;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-menu-no-active{
+  color: #000000 !important;
+  background: linear-gradient(
+    90deg,
+    rgb(247, 156, 82) 20%,
+    rgb(247, 156, 82) 90%
+  );
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-home #btnHome {
+  color: #000000 !important;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-tabmat #btnTabMat {
+  color: #000000 !important;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.emaill{
+  font-size: 120%;
+  color: rgb(247, 156, 82);
+}
+
+.cover-div{
+  background-image: url('../www/img/184.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 0%;
+  margin: 0%;
+  border-radius: 0 0 50px 50px;
+}

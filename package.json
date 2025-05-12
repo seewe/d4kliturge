@@ -1,0 +1,29 @@
+{
+  "name": "d4kliturge",
+  "version": "1.0.0",
+  "description": "Receuil de chants liturgiques.",
+  "main": "index.js",
+  "directories": {
+    "man": "man",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seewe/d4kliturge.git"
+  },
+  "author": "Sergio Ewane Ebouele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seewe/d4kliturge/issues"
+  },
+  "homepage": "https://github.com/seewe/d4kliturge#readme",
+  "dependencies": {
+    "@capacitor/android": "^7.2.0",
+    "@capacitor/cli": "^7.2.0",
+    "@capacitor/core": "^7.2.0",
+    "@capacitor/ios": "^7.2.0"
+  }
+}

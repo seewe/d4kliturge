@@ -1,0 +1,75 @@
+<!-- brand bar -->
+<style>
+  .cover-chant-div {
+    background-image: url("../www/img/{{data_template.cover_img}}.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 0 0 0 50px;
+  }
+</style>
+<div class="cover-chant-div">
+  <div
+    style="
+      padding-top: 130px;
+      padding-bottom: 10px;
+      margin-bottom: 00px;
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.32),
+        rgba(247, 156, 82, 0.87) 100%
+      );
+    "
+  >
+    <h4
+      class="card-title text-center fw-bold py-2"
+      style="
+        margin: 0 0 0 5%;
+        color: rgb(0, 0, 0);
+        border-radius: 0 0 0 70px;
+        background: linear-gradient(
+          90deg,
+          rgb(255, 255, 255) 20%,
+          rgb(255, 206, 166) 60%,
+          rgb(255, 255, 255) 95%
+        );
+      "
+    >
+      {{data_template.titre}}
+    </h4>
+  </div>
+</div>
+
+<div
+  class="card text-left mx-3 border border-0"
+  style="margin-top: 00px; margin-bottom: 150px"
+>
+  <div
+    class="card-body text-center"
+    style="
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.05) 10%,
+        rgba(255, 226, 202, 0.29) 50%,
+        rgba(255, 255, 255, 0.05) 90%
+      );
+    "
+  >
+    <p class="card-text">{{data_template.contenu}}</p>
+  </div>
+  <div
+    class="card-footer text-dark text-center fst-italic fw-bold"
+    style="
+      background: linear-gradient(
+        180deg,
+        rgba(247, 156, 82, 0.38),
+        rgba(255, 255, 255, 0.32) 90%
+      );
+      border-radius: 0 0 30px 30px;
+    "
+  >
+    {{data_template.categorie}}
+  </div>
+</div>
