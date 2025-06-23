@@ -1,0 +1,21 @@
+.hovermenu:hover {
+  color: #000000 !important;
+  border-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-menu-active {
+  color: #000000 !important;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-menu-no-active {
+  color: #000000 !important;
+  background: linear-gradient(
+    90deg,
+    rgb(247, 156, 82) 20%,
+    rgb(247, 156, 82) 90%
+  );
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

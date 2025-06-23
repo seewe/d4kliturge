@@ -1,0 +1,45 @@
+.chant-title-container {
+  padding-top: 130px;
+  padding-bottom: 10px;
+  margin-bottom: 00px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.32),
+    rgba(247, 156, 82, 0.87) 100%
+  );
+}
+
+.chant-card-title {
+  margin: 0 0 0 5%;
+  color: rgb(0, 0, 0);
+  border-radius: 0 0 0 70px;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 20%,
+    rgb(255, 206, 166) 60%,
+    rgb(255, 255, 255) 95%
+  );
+}
+
+.chant-body-card {
+  margin-top: 00px;
+  margin-bottom: 150px;
+}
+
+.chant-body-card-content {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 10%,
+    rgba(255, 226, 202, 0.29) 50%,
+    rgba(255, 255, 255, 0.05) 90%
+  );
+}
+
+.chant-body-card .card-footer:last-child {
+  background: linear-gradient(
+    180deg,
+    rgba(247, 156, 82, 0.38),
+    rgba(255, 255, 255, 0.32) 90%
+  );
+  border-radius: 0 0 30px 30px;
+}

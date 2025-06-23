@@ -1,29 +1,33 @@
 {
-  "name": "d4kliturge",
-  "version": "1.0.0",
-  "description": "Receuil de chants liturgiques.",
-  "main": "index.js",
-  "directories": {
-    "man": "man",
-    "test": "tests"
-  },
+  "name": "reactest",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/seewe/d4kliturge.git"
-  },
-  "author": "Sergio Ewane Ebouele",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/seewe/d4kliturge/issues"
-  },
-  "homepage": "https://github.com/seewe/d4kliturge#readme",
   "dependencies": {
-    "@capacitor/android": "^7.2.0",
-    "@capacitor/cli": "^7.2.0",
-    "@capacitor/core": "^7.2.0",
-    "@capacitor/ios": "^7.2.0"
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
+    "react": "^19.1.0",
+    "react-bootstrap": "^2.10.10",
+    "react-bootstrap-icons": "^1.11.6",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.2",
+    "react-router-dom": "^7.6.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "vite": "^6.3.5"
   }
 }

@@ -1,0 +1,85 @@
+.cover-div-don {
+  background-image: url("../assets/161.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 0%;
+  margin: 0%;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.cover-div-inner-don {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.86),
+    rgba(255, 246, 239, 0.88) 100%
+  );
+  border-radius: 50px 50px 50px 50px;
+  color: bisque;
+}
+
+.card-don > .card-body {
+  color: rgb(0, 0, 0);
+}
+
+.contactButton {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 161, 84, 0),
+    rgba(255, 255, 255, 0) 90%
+  );
+}
+
+.contactButtonPaypal {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 161, 84, 0),
+    rgba(255, 255, 255, 0.79) 90%
+  );
+}
+
+.contactButtonWise {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 161, 84, 0),
+    rgba(255, 255, 255, 0.36) 90%
+  );
+  width: 50px;
+  height: 50px;
+}
+
+.contactButtonStripe {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 161, 84, 0),
+    rgba(255, 255, 255, 0.36) 90%
+  );
+  color: rgb(81, 103, 252);
+  border: 0px solid;
+  width: 50px;
+  height: 50px;
+}
+.contactButtonInter {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 161, 84, 0),
+    rgba(255, 255, 255, 0.36) 90%
+  );
+  color: rgb(81, 103, 252);
+  border: 0px solid;
+  width: 50px;
+  height: 50px;
+}
+
+.lien-don {
+  border-radius: 30px;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 156, 82, 0.49) 5%,
+    rgb(252, 226, 204, 0.49) 30%,
+    rgba(255, 255, 255) 90%
+  );
+}

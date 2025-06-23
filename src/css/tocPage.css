@@ -1,0 +1,30 @@
+.toc-title-container {
+  padding-top: 120px;
+  padding-bottom: 00px;
+  margin: 0%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.32),
+    rgba(247, 156, 82, 0.87) 100%
+  );
+}
+
+.toc-title-label {
+  margin: 0 20%;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.6) 10%,
+    rgb(255, 255, 255) 60%,
+    rgba(255, 255, 255, 0.6) 95%
+  );
+}
+
+.toc-content-title {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(247, 156, 82, 0.9) 80%
+  );
+  border-radius: 0 0 30px 30px;
+}

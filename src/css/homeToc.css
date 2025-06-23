@@ -1,0 +1,21 @@
+.icon-home-toc {
+  font-size: 4rem;
+  top: 0px;
+  right: 20px;
+  opacity: 0.15;
+}
+
+.card-body .emaill {
+  font-size: 120%;
+  color: rgba(247, 156, 82, 0.87);
+}
+
+.home-desc-text {
+  text-align: justify;
+}
+
+.page-home #btnHome {
+  color: #000000 !important;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

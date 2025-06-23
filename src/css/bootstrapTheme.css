@@ -1,0 +1,23 @@
+body {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .offcanvas-custom {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offcanvas-custom {
+    width: 40%;
+  }
+}
+
+#don {
+  border: 1px solid rgba(255, 115, 1, 0.36);
+  animation: pulsecopy 1.5s ease-in infinite;
+  margin-top: 30px;
+  background-color: antiquewhite;
+}

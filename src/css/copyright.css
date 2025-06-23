@@ -1,0 +1,15 @@
+#copyright {
+  border: 0px solid rgba(255, 115, 1, 0.36);
+  animation: pulsecopy 3.5s ease-in infinite;
+  margin-bottom: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.buttonPulse {
+  border: 0px solid rgba(255, 115, 1, 0.36);
+  animation: pulsecopy 3.5s ease-in infinite;
+  margin-bottom: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
