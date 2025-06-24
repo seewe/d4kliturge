@@ -35,7 +35,7 @@ export default function NavBarOffCanvas() {
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-md`}
             aria-labelledby={`offcanvasNavbarLabel-expand-md`}
-            className="w-75"
+            style={{ width: "90%" }}
             placement="start"
           >
             <Offcanvas.Header closeButton>
@@ -45,7 +45,7 @@ export default function NavBarOffCanvas() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <ResearchChant items={searchChantTitle} />
-            <Offcanvas.Body className="px-0 mt-3">
+            <Offcanvas.Body className="px-0 mt-4">
               <Nav className="justify-content-end flex-grow-1 pe-0">
                 <NavBarList listChants={ChantsMenu} />
               </Nav>

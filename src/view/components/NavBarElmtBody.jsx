@@ -23,7 +23,7 @@ export default function NavBarElmtBody({ navBarBodyChant }) {
             className="d-flex justify-content-between align-items-start"
           >
             <div className="ms-2 me-auto">
-              <div className="fw-bold">{chant.titre}</div>
+              <div className="fs-7">{chant.titre}</div>
               <Badge className="accBadge text-dark" pill>
                 {chant.categorie}
               </Badge>

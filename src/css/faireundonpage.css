@@ -47,8 +47,8 @@
     rgba(255, 161, 84, 0),
     rgba(255, 255, 255, 0.36) 90%
   );
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .contactButtonStripe {
@@ -59,8 +59,8 @@
   );
   color: rgb(81, 103, 252);
   border: 0px solid;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .contactButtonInter {
   background: linear-gradient(
@@ -70,8 +70,8 @@
   );
   color: rgb(81, 103, 252);
   border: 0px solid;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .lien-don {

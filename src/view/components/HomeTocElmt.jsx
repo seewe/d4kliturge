@@ -5,13 +5,13 @@ export default function HomeTocElmt({ title, description, icon, link }) {
   return (
     <a
       type="button"
-      className="text-body text-decoration-none emaill"
+      className="text-body text-decoration-none emaill mx-0"
       onClick={() => {
         navigate(link);
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}
     >
-      <div className="card bg-transparent mb-3 shadow">
+      <div className="card bg-transparent mb-3 w-100 shadow">
         <i className={`bi bi-${icon} position-absolute icon-home-toc`}></i>
         <div className="card-body">
           <h5 className="card-title fw-bold emaill">{title}</h5>

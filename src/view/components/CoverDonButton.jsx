@@ -10,7 +10,7 @@ export default function CoverDonButton({ label, link }) {
       id="don"
     >
       <a
-        className="btn fw-bold fs-3"
+        className="btn fw-bold fs-4 py-0"
         onClick={() => {
           navigate(link);
           window.scrollTo({ top: 0, behavior: "smooth" });
