@@ -12,10 +12,7 @@ export default function FaireUnDonStripe() {
         rel="noopener noreferrer"
         onClick={handleStripe}
       >
-        <Stripe
-          size={50}
-          className="mx-2 p-2 shadow rounded-4 contactButton contactButtonStripe"
-        />
+        <Stripe className="mx-1 p-1 shadow rounded-4 contactButton contactButtonStripe" />
       </a>
     </>
   );

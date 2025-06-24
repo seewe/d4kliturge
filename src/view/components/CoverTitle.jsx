@@ -1,3 +1,4 @@
+import liturgeIco from "../../assets/liturgeico1.png";
 export default function CoverTitle({ title, subtitle }) {
   return (
     <div className="row g-1" style={{ margin: "0%" }}>
@@ -8,7 +9,7 @@ export default function CoverTitle({ title, subtitle }) {
       <div className="col-4 p-0">
         <img
           alt="liturge"
-          src="../../../src/assets/liturgeico1.png"
+          src={liturgeIco}
           width="100"
           height="100"
           className="rounded rounded-3"

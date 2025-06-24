@@ -15,13 +15,6 @@ export default function Copyright({ label, link }) {
           className="bi bi-c-circle text-muted"
           style={{ fontSize: "20px" }}
         ></i>{" "}
-        {/* <img
-          alt=""
-          src="../../src/assets/d4kico.png"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-        />{" "} */}
         {label}
       </a>
     </div>

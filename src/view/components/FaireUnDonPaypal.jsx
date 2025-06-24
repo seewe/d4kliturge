@@ -13,8 +13,8 @@ export default function FaireUnDonPaypal() {
         onClick={handlePaypal}
       >
         <Paypal
-          size={50}
-          className="mx-2 p-2 shadow rounded-4 text-primary border border-0 border-primary contactButton"
+          size={40}
+          className="mx-1 p-1 shadow rounded-4 text-primary border border-0 border-primary contactButton"
         />
       </a>
     </>

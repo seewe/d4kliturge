@@ -41,7 +41,7 @@ export default function NavBarOffCanvas() {
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
                 <LiturgeLogo />
-                <span className="navBarPaneTitle">Liste des chants</span>
+                <span className="navBarPaneTitle"> Les chants</span>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <ResearchChant items={searchChantTitle} />

@@ -1,6 +1,7 @@
 import { Image } from "react-bootstrap";
 import { lienContext } from "./FaireUnDonLien";
 import { useContext } from "react";
+import wise from "../../assets/wise.png";
 
 export default function FaireUnDonWise() {
   const { handleWise } = useContext(lienContext);
@@ -13,9 +14,9 @@ export default function FaireUnDonWise() {
         onClick={handleWise}
       >
         <Image
-          src="../../../src/assets/wise.png"
+          src={wise}
           fluid
-          className="mx-2 p-2 shadow rounded rounded-4 text-success border border-0 border-success contactButton contactButtonWise"
+          className="mx-1 p-1 shadow rounded rounded-4 text-success border border-0 border-success contactButton contactButtonWise"
         />
       </a>
     </>

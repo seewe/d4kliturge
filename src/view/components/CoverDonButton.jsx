@@ -1,9 +1,4 @@
-import {
-  BalloonHeart,
-  Box2Heart,
-  CashStack,
-  EmojiHeartEyesFill,
-} from "react-bootstrap-icons";
+import { BalloonHeart } from "react-bootstrap-icons";
 import { useNavigate } from "react-router";
 
 export default function CoverDonButton({ label, link }) {

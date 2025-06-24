@@ -1,5 +1,5 @@
 import homeToc from "../../models/homeToc";
-import Copyright from "./copyright";
+import Copyright from "./Copyright";
 import HomeDesc from "./HomeDesc";
 import HomeTocElmt from "./HomeTocElmt";
 

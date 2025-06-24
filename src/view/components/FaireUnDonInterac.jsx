@@ -1,6 +1,7 @@
 import { Image } from "react-bootstrap";
 import { lienContext } from "./FaireUnDonLien";
 import { useContext } from "react";
+import interacLogo from "../../assets/InteracLogo.png";
 
 export default function FaireUnDonInterac() {
   const { handleInterac } = useContext(lienContext);
@@ -13,9 +14,9 @@ export default function FaireUnDonInterac() {
         onClick={handleInterac}
       >
         <Image
-          src="../../../src/assets/InteracLogo.png"
+          src={interacLogo}
           fluid
-          className="mx-2 p-2 shadow rounded rounded-4 text-success border border-0 border-success contactButton contactButtonInter"
+          className="mx-1 p-1 shadow rounded rounded-4 text-success border border-0 border-success contactButton contactButtonInter"
         />
       </a>
     </>
