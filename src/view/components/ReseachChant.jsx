@@ -5,7 +5,7 @@ import { Search } from "react-bootstrap-icons";
 import { useNavigate } from "react-router";
 import { extractNumber } from "../../js/utilsFunctions";
 
-export default function ResearchChant({ items, onChantSelect }) {
+export default function ResearchChant({ items }) {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
 
@@ -74,13 +74,14 @@ export default function ResearchChant({ items, onChantSelect }) {
           }}
         >
           {matched.length > 0 ? (
-            matched.map(({ key, displayKey, displayValue }) => (
+            matched.map(({ key, displayValue }) => (
               <li
                 key={key}
                 className="reseachResultItem"
                 style={{
-                  padding: "15px 12px",
+                  padding: "6px 5px",
                   borderBottom: "1px solid #eee",
+                  fontSize: "12px",
                   cursor: "pointer",
                 }}
                 onClick={() => {

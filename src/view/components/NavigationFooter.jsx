@@ -1,6 +1,6 @@
 import { CaretLeftFill, CaretRightFill } from "react-bootstrap-icons";
 import NavigationButton from "./NavigationButton";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function NavigationFooter({ id }) {
   const next = Math.min(Number(id) + 1, 208);
@@ -13,7 +13,7 @@ export default function NavigationFooter({ id }) {
       const scrollable =
         document.documentElement.scrollHeight > window.innerHeight;
       const reachedBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight * 0.9;
+        window.innerHeight + window.scrollY >= document.body.offsetHeight*0.5;
 
       if (!scrollable || reachedBottom) {
         setAtBottom(true);

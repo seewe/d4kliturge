@@ -1,7 +1,7 @@
 export default function Copyright({ label, link }) {
   return (
     <div
-      className="text-center rounded rounded-pill bg-transparent my-5 mx-3"
+      className="text-center rounded rounded-pill bg-transparent mt-5 mx-3"
       id="copyright"
     >
       <a

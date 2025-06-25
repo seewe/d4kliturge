@@ -16,7 +16,7 @@ export default function NavBarOffCanvas() {
     <>
       <Navbar
         expand={false}
-        className="mb-3 d-lg-block fixed-top shadow mainNav"
+        className="mb-3 pt-4 d-lg-block fixed-top shadow mainNav"
       >
         <Container fluid>
           <Navbar.Brand
@@ -39,7 +39,7 @@ export default function NavBarOffCanvas() {
             placement="start"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`} className="pt-3">
                 <LiturgeLogo />
                 <span className="navBarPaneTitle"> Les chants</span>
               </Offcanvas.Title>

@@ -10,14 +10,14 @@ export default function Footer() {
           <div className="d-flex flex-row bd-highlight">
             <a
               id="btnHome"
-              className="btn flex-fill bd-highlight rounded rounded-0 fs-5 fw-bold hovermenu btn-menu-no-active"
+              className="btn flex-fill bd-highlight rounded rounded-0 fs-5 fw-bold hovermenu pt-3 pb-5 btn-menu-no-active"
               onClick={() => navigate("/")}
             >
               <HouseFill />
             </a>
             <a
               id="btnTabMat"
-              className="btn flex-fill bd-highlight rounded rounded-0 fs-5 fw-bold hovermenu btn-menu-no-active"
+              className="btn flex-fill bd-highlight rounded rounded-0 fs-5 fw-bold hovermenu pt-3 pb-5 btn-menu-no-active"
               onClick={() => {
                 navigate("/tabledematiere");
                 window.scrollTo({ top: 0, behavior: "smooth" });

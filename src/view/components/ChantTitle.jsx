@@ -24,9 +24,9 @@ export default function ChantTitle({ titre }) {
         }}
       >
         <div className="chant-title-container">
-          <h4 className="card-title text-center fw-bold py-2 chant-card-title">
+          <h5 className="card-title text-center fw-bold py-2 chant-card-title">
             {titre}
-          </h4>
+          </h5>
         </div>
       </div>
     </>

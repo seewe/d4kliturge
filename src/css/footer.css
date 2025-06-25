@@ -13,9 +13,10 @@
 .btn-menu-no-active {
   color: #000000 !important;
   background: linear-gradient(
-    90deg,
-    rgb(247, 156, 82) 20%,
-    rgb(247, 156, 82) 90%
+    0deg,
+    rgb(248, 174, 114),
+    rgba(255, 255, 255) 90%
   );
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
+    border: none;
 }
