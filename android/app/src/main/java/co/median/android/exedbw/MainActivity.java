@@ -1,4 +1,4 @@
-package com.example.app;
+package co.median.android.exedbw;
 
 import com.getcapacitor.BridgeActivity;
 
