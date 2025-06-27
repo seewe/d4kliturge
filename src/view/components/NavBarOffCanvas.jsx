@@ -39,7 +39,10 @@ export default function NavBarOffCanvas() {
             placement="start"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`} className="pt-3">
+              <Offcanvas.Title
+                id={`offcanvasNavbarLabel-expand-md`}
+                className="pt-3"
+              >
                 <LiturgeLogo />
                 <span className="navBarPaneTitle"> Les chants</span>
               </Offcanvas.Title>
@@ -54,6 +57,7 @@ export default function NavBarOffCanvas() {
               Faire un don
             </span>
             <FaireUnDonLien />
+            <span className="mb-5"> </span>
           </Navbar.Offcanvas>
         </Container>
       </Navbar>

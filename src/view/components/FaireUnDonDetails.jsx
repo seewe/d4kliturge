@@ -6,7 +6,7 @@ export default function FaireUnDonDetails() {
   const { title, content, show, handleClose, theme } = useContext(modalContext);
   return (
     <>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton style={{ backgroundColor: theme }}>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
