@@ -12,7 +12,7 @@ export default function FaireUnDonMainPage() {
         titre={<TocTitle titre="FAIRE UN DON" />}
         contenu={<FaireUnDonContent faireUnDonText={<FaireUnDonText />} />}
         nextPage={
-          <ButtonPulse label="Home Page" icon={<HouseFill />} link="/" />
+          <ButtonPulse label="Page d'acceuil" icon={<HouseFill />} link="/" />
         }
       />
     </>
