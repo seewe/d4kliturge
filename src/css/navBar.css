@@ -44,6 +44,17 @@
   );
 }
 
+.phone-tools-bar {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(247, 156, 82, 0.48) 3%,
+    rgb(0, 0, 0) 20%
+  );
+}
+
 .accordion-header .accordion-button {
   font-weight: bold;
   padding: 10px 20px;
@@ -80,17 +91,21 @@
 }
 
 .offcanvas-header {
-  border-radius: 0 30px 0 30px;
-  background: linear-gradient(0deg, rgb(247, 156, 82), rgb(255, 255, 255) 90%);
+  border-radius: 0 0 0 30px;
+  background: linear-gradient(
+    180deg,
+    rgba(247, 156, 82, 0.48),
+    rgb(247, 156, 82) 99%
+  );
   margin-bottom: 5%;
 }
 
 .navBarTitle {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: rgb(34, 16, 1);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  letter-spacing: 10%;
+  letter-spacing: 5%;
 }
 
 .navBarPaneTitle {
@@ -102,7 +117,7 @@
 }
 
 .navBarAccTitle > .accordion-button {
-  font-size: 14px;
+  font-size: 12px;
   padding: 2%;
   color: rgb(68, 31, 1);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -111,7 +126,7 @@
 }
 
 .list-group-item {
-  font-size: 12px;
+  font-size: 10px;
   padding: 1%;
   color: rgb(68, 31, 1);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -127,24 +142,21 @@
   margin-right: 70px;
 }
 
-.navLeft {
+.navBtn {
   background: linear-gradient(0deg, rgb(247, 156, 82), rgb(255, 255, 255) 90%);
   padding-top: 2%;
   padding-bottom: 2%;
   text-align: center;
   color: black;
-  border-radius: 0 0 0 60px;
   margin-bottom: 35px;
+  font-size: 16px;
+}
+.navLeft {
+  border-radius: 0 0 0 60px;
 }
 
 .navRight {
-  background: linear-gradient(0deg, rgb(247, 156, 82), rgb(255, 255, 255) 90%);
-  padding-top: 2%;
-  padding-bottom: 2%;
-  text-align: center;
-  color: black;
   border-radius: 0 0 60px 0;
-  margin-bottom: 35px;
 }
 
 #nav-footer,

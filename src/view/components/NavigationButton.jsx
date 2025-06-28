@@ -6,7 +6,7 @@ export default function NavigationButton({ label, icon, link, side }) {
     return (
       <>
         <a
-          className="flex-fill bd-highlight shadow fw-bold mx-5 navLeft text-decoration-none w-50"
+          className="flex-fill bd-highlight shadow fw-bold mx-5 navBtn navLeft text-decoration-none w-50"
           type="button"
           onClick={() => {
             navigate(link);
@@ -21,7 +21,7 @@ export default function NavigationButton({ label, icon, link, side }) {
     return (
       <>
         <a
-          className="flex-fill bd-highlight shadow fw-bold mx-5 navRight text-decoration-none w-50"
+          className="flex-fill bd-highlight shadow fw-bold mx-5 navBtn navRight text-decoration-none w-50"
           type="button"
           onClick={() => {
             navigate(link);

@@ -10,7 +10,8 @@
 }
 
 .chant-card-title {
-  margin: 0 0 0 5%;
+  margin: 0 0 0 3%;
+  padding: 0 5% 0 5%;
   color: rgb(0, 0, 0);
   border-radius: 0 0 0 70px;
   background: linear-gradient(
@@ -19,6 +20,7 @@
     rgb(255, 206, 166) 60%,
     rgb(255, 255, 255) 95%
   );
+  font-size: 16px;
 }
 
 .chant-body-card {
@@ -33,6 +35,7 @@
     rgba(255, 226, 202, 0.29) 50%,
     rgba(255, 255, 255, 0.05) 90%
   );
+  font-size: 14px;
 }
 
 .chant-body-card .card-footer:last-child {

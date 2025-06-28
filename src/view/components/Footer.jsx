@@ -1,23 +1,34 @@
 import { HouseFill, MusicNoteList } from "react-bootstrap-icons";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 export default function Footer() {
   const navigate = useNavigate();
+  const location = useLocation();
   return (
     <>
       <footer className="fixed-bottom">
-        <div className="bg-white p-0 border-top border-light border-3 shadow-lg">
+        <div className="bg-transparent p-0">
           <div className="d-flex flex-row bd-highlight">
             <a
               id="btnHome"
-              className="btn flex-fill bd-highlight rounded rounded-0 fs-5 fw-bold hovermenu pt-3 pb-5 btn-menu-no-active"
+              type="button"
+              className={`flex-fill bd-highlight fs-5 fw-bold hovermenu pt-2 pb-0 text-center ${
+                location.pathname === "/"
+                  ? "btn-menu-active "
+                  : "btn-menu-no-active "
+              }`}
               onClick={() => navigate("/")}
             >
               <HouseFill />
             </a>
             <a
               id="btnTabMat"
-              className="btn flex-fill bd-highlight rounded rounded-0 fs-5 fw-bold hovermenu pt-3 pb-5 btn-menu-no-active"
+              type="button"
+              className={`flex-fill bd-highlight fs-5 fw-bold hovermenu pt-2 pb-0 text-center ${
+                location.pathname === "/tabledematiere"
+                  ? "btn-menu-active "
+                  : "btn-menu-no-active "
+              }`}
               onClick={() => {
                 navigate("/tabledematiere");
                 window.scrollTo({ top: 0, behavior: "smooth" });
@@ -27,6 +38,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <div className="phone-footer-bar border border-0"> </div>
       </footer>
     </>
   );

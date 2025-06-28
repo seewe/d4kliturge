@@ -2,8 +2,8 @@ import ButtonPulse from "../view/components/ButtonPulse";
 import OtherPage from "../view/components/OtherPage";
 import TocTitle from "../view/components/TocTitle";
 import FaireUnDonContent from "../view/components/FaireUnDonContent";
-import { HouseFill } from "react-bootstrap-icons";
 import FaireUnDonText from "../models/FaireUnDonText";
+import LiturgeLogo from "../view/components/LiturgeLogo";
 
 export default function FaireUnDonMainPage() {
   return (
@@ -12,7 +12,11 @@ export default function FaireUnDonMainPage() {
         titre={<TocTitle titre="FAIRE UN DON" />}
         contenu={<FaireUnDonContent faireUnDonText={<FaireUnDonText />} />}
         nextPage={
-          <ButtonPulse label="Page d'acceuil" icon={<HouseFill />} link="/" />
+          <ButtonPulse
+            label={"Liturge".toUpperCase()}
+            icon={<LiturgeLogo size={20} />}
+            link="/"
+          />
         }
       />
     </>

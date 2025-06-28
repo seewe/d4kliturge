@@ -30,8 +30,8 @@ export default function ResearchChant({ items }) {
       style={{
         position: "relative",
         justifyContent: "center",
-        paddingLeft: "15%",
-        paddingRight: "15%",
+        paddingLeft: "10%",
+        paddingRight: "10%",
       }}
       className="ResultList"
     >
@@ -68,8 +68,8 @@ export default function ResearchChant({ items }) {
             marginTop: 0,
             listStyle: "none",
             zIndex: 1000,
-            marginLeft: "15%",
-            marginRight: "15%",
+            marginLeft: "10%",
+            marginRight: "10%",
             paddingLeft: "0%",
           }}
         >
@@ -79,9 +79,9 @@ export default function ResearchChant({ items }) {
                 key={key}
                 className="reseachResultItem"
                 style={{
-                  padding: "6px 5px",
+                  padding: "4px 5px",
                   borderBottom: "1px solid #eee",
-                  fontSize: "12px",
+                  fontSize: "10px",
                   cursor: "pointer",
                 }}
                 onClick={() => {

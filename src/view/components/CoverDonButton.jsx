@@ -6,7 +6,7 @@ export default function CoverDonButton({ label, link }) {
   return (
     <div
       className="text-center rounded rounded-pill text-white mx-5 text-justify-content"
-      style={{ marginBottom: "15%" }}
+      style={{ marginTop: "20%", marginBottom: "0%" }}
       id="don"
     >
       <a

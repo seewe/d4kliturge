@@ -1,12 +1,12 @@
 import liturgeIco from "../../assets/liturgeico1.png";
-function LiturgeLogo() {
+function LiturgeLogo({ size }) {
   return (
     <>
       <img
         alt=""
         src={liturgeIco}
-        width="40"
-        height="40"
+        width={size}
+        height={size}
         className="d-inline-block align-top"
       />{" "}
     </>

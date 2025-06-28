@@ -5,7 +5,7 @@
   background-position: center center;
   padding: 0%;
   margin: 0%;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
 }
 
 .cover-div-inner-don {
@@ -17,7 +17,7 @@
     rgba(255, 255, 255, 0.86),
     rgba(255, 246, 239, 0.88) 100%
   );
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   color: bisque;
 }
 

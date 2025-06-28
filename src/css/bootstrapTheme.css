@@ -15,9 +15,18 @@ body {
   }
 }
 
-#don {
-  border: 1px solid rgba(255, 115, 1, 0.11);
-  animation: pulsecopy 1.5s ease-in infinite;
-  margin-top: 30px;
-  background-color: rgba(250, 235, 215, 0.548);
+.form-control:focus {
+  border-color: inherit !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+button:focus,
+button:active,
+.btn:focus,
+.btn:active {
+  background-color: inherit !important;
+  border-color: inherit !important;
+  box-shadow: none !important;
+  color: inherit !important;
 }
