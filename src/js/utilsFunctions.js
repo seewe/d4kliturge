@@ -62,3 +62,15 @@ function watchScrollToBottom(targetId) {
     }
   });
 }
+
+export function clickCloseOffcanvas() {
+  document.querySelectorAll(".offcanvas-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      const offcanvasEl = document.getElementById("offcanvasNavbar-expand-md");
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+      if (bsOffcanvas) {
+        bsOffcanvas.hide();
+      }
+    });
+  });
+}

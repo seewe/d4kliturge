@@ -1,17 +1,17 @@
 import { Image } from "react-bootstrap";
-import { lienContext } from "./FaireUnDonLien";
-import { useContext } from "react";
+import modalDetail from "../../models/FaireUnDonModal";
 import orange from "../../assets/orangemoneyico.png";
+import { useContext } from "react";
+import { appContext } from "../../context/appContext";
 
 export default function FaireUnDonOrange() {
-  const {
-    handleMTN,
-    handleOrange,
-    handlePaypal,
-    handleWise,
-    handleStripe,
-    handleInterac,
-  } = useContext(lienContext);
+  const { setTheme, setTitle, setContent, setShow } = useContext(appContext);
+  const handleOrange = () => {
+    setTitle(<modalDetail.orangeTitle />);
+    setContent(<modalDetail.orange />);
+    setTheme("rgb(255, 141, 48)");
+    setShow(true);
+  };
   return (
     <>
       <a

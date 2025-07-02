@@ -1,12 +1,18 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { modalContext } from "./FaireUnDonLien";
+import { appContext } from "../../context/appContext";
 
 export default function FaireUnDonDetails() {
-  const { title, content, show, handleClose, theme } = useContext(modalContext);
+  const { show, title, content, theme, setShow } = useContext(appContext);
   return (
     <>
-      <Modal show={show} onHide={handleClose} centered>
+      <Modal
+        show={show}
+        onHide={() => {
+          setShow(false);
+        }}
+        centered
+      >
         <Modal.Header closeButton style={{ backgroundColor: theme }}>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>

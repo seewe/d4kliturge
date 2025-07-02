@@ -2,9 +2,13 @@ import { Badge } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 import { extractNumber } from "../../js/utilsFunctions";
 import { useNavigate } from "react-router";
+import { useContext } from "react";
+import { appContext } from "../../context/appContext";
 
 export default function NavBarElmtBody({ navBarBodyChant }) {
   const navigate = useNavigate();
+  const { setShowOffCan } = useContext(appContext);
+  const handleCloseOffCan = () => setShowOffCan(false);
   return (
     <ListGroup as="ol">
       {Object.entries(navBarBodyChant).map(([key, chant]) => (
@@ -12,6 +16,7 @@ export default function NavBarElmtBody({ navBarBodyChant }) {
           onClick={() => {
             navigate(`/chant/${extractNumber(chant.id)}`);
             window.scrollTo({ top: 0, behavior: "smooth" });
+            handleCloseOffCan();
           }}
           type="button"
           className="text-body text-decoration-none fw-bold"

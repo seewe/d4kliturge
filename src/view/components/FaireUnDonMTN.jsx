@@ -1,10 +1,17 @@
 import { Image } from "react-bootstrap";
-import { lienContext } from "./FaireUnDonLien";
-import { useContext } from "react";
+import modalDetail from "../../models/FaireUnDonModal";
 import mtn from "../../assets/mtn.svg";
+import { useContext } from "react";
+import { appContext } from "../../context/appContext";
 
 export default function FaireUnDonMTN() {
-  const { handleMTN } = useContext(lienContext);
+  const { setTheme, setTitle, setContent, setShow } = useContext(appContext);
+  const handleMTN = () => {
+    setTitle(<modalDetail.mtnTitle />);
+    setContent(<modalDetail.mtn />);
+    setTheme("rgb(250, 222, 65)");
+    setShow(true);
+  };
   return (
     <>
       <a

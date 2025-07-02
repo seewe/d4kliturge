@@ -25,6 +25,30 @@
   color: rgb(0, 0, 0);
 }
 
+.wiseDonLinkButton {
+  background: linear-gradient(
+    0deg,
+    rgba(176, 255, 124, 0.41),
+    rgba(255, 255, 255, 0) 90%
+  );
+}
+
+.paypalDonLinkButton {
+  background: linear-gradient(
+    0deg,
+    rgba(124, 185, 255, 0.45),
+    rgba(255, 255, 255, 0) 90%
+  );
+}
+
+.wiseDonLinkButton a {
+  color: black;
+}
+
+.paypalDonLinkButton a {
+  color: black;
+}
+
 .contactButton {
   background: linear-gradient(
     0deg,
@@ -47,8 +71,8 @@
     rgba(255, 161, 84, 0),
     rgba(255, 255, 255, 0.36) 90%
   );
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .contactButtonStripe {
@@ -59,8 +83,8 @@
   );
   color: rgb(81, 103, 252);
   border: 0px solid;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 .contactButtonInter {
   background: linear-gradient(
@@ -70,8 +94,8 @@
   );
   color: rgb(81, 103, 252);
   border: 0px solid;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .lien-don {

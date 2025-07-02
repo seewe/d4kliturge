@@ -10,9 +10,16 @@ import searchChantTitle from "../../models/searchChantTitle";
 import { useNavigate } from "react-router";
 import FaireUnDonLien from "./FaireUnDonLien";
 import CoverDonButton from "./CoverDonButton";
+import { createContext, useContext, useState } from "react";
+import { appContext } from "../../context/appContext";
+export const offCanvasContext = createContext();
 
 export default function NavBarOffCanvas() {
+  const { showOffCan, setShowOffCan } = useContext(appContext);
   const navigate = useNavigate();
+  const handleCloseOffCan = () => setShowOffCan(false);
+  const handleShowOffCan = () => setShowOffCan(true);
+
   return (
     <>
       <Navbar
@@ -34,6 +41,7 @@ export default function NavBarOffCanvas() {
             </span>
           </Navbar.Brand>
           <Navbar.Toggle
+            onClick={handleShowOffCan}
             aria-controls={`offcanvasNavbar-expand-md`}
             className="mb-1 fs-6 p-1 "
           />
@@ -41,6 +49,8 @@ export default function NavBarOffCanvas() {
             id={`offcanvasNavbar-expand-md`}
             aria-labelledby={`offcanvasNavbarLabel-expand-md`}
             style={{ width: "90%" }}
+            show={showOffCan}
+            onHide={handleCloseOffCan}
             placement="start"
           >
             <div className="phone-tools-bar"> </div>
@@ -63,6 +73,7 @@ export default function NavBarOffCanvas() {
                   className="navBarPaneTitle fs-4 text-decoration-none"
                   onClick={() => {
                     navigate("/tabledematiere");
+                    handleCloseOffCan();
                   }}
                 >
                   {" "}
@@ -71,13 +82,13 @@ export default function NavBarOffCanvas() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <ResearchChant items={searchChantTitle} />
-            <Offcanvas.Body className="px-0 mt-5">
+            <Offcanvas.Body className="px-0 mt-3">
               <Nav className="justify-content-end flex-grow-1 pe-0">
                 <NavBarList listChants={ChantsMenu} />
               </Nav>
             </Offcanvas.Body>
             <CoverDonButton label={"Faire un don"} link={"/faireundon"} />
-            <FaireUnDonLien />
+            <FaireUnDonLien className="mt-2" />
             <div className="phone-footer-bar"> </div>
           </Navbar.Offcanvas>
         </Container>

@@ -1,9 +1,4 @@
 import { Accordion } from "react-bootstrap";
-import {
-  Calendar3,
-  CalendarDay,
-  PatchQuestionFill,
-} from "react-bootstrap-icons";
 
 export default function AnneeLiturgiqueContentElmt({
   elmtID,
@@ -23,7 +18,7 @@ export default function AnneeLiturgiqueContentElmt({
     >
       <Accordion.Item eventKey={elmtID}>
         <Accordion.Button
-          className="fw-bold fs-4 px-3"
+          className="fw-bold fs-5 px-3"
           style={{ background: `${borderColor}` }}
         >
           {periode}

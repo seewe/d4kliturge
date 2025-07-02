@@ -1,9 +1,16 @@
-import { lienContext } from "./FaireUnDonLien";
 import { useContext } from "react";
+import modalDetail from "../../models/FaireUnDonModal";
 import { Stripe } from "react-bootstrap-icons";
+import { appContext } from "../../context/appContext";
 
 export default function FaireUnDonStripe() {
-  const { handleStripe } = useContext(lienContext);
+  const { setTheme, setTitle, setContent, setShow } = useContext(appContext);
+  const handleStripe = () => {
+    setTitle(<modalDetail.stripeTitle />);
+    setContent(<modalDetail.stripe />);
+    setTheme("rgb(125, 118, 252)");
+    setShow(true);
+  };
   return (
     <>
       <a

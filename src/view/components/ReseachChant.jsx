@@ -1,13 +1,16 @@
-import { useState } from "react";
 import { fuzzyHighlight } from "../../js/utilsFunctions";
 import { Form, InputGroup } from "react-bootstrap";
 import { Search } from "react-bootstrap-icons";
 import { useNavigate } from "react-router";
 import { extractNumber } from "../../js/utilsFunctions";
+import { useContext } from "react";
+import { appContext } from "../../context/appContext";
 
 export default function ResearchChant({ items }) {
-  const [query, setQuery] = useState("");
   const navigate = useNavigate();
+  const { setShowOffCan, query, setQuery } = useContext(appContext);
+  const handleCloseOffCan = () => setShowOffCan(false);
+  const eraseValue = () => setQuery("");
 
   const matched = Object.entries(items)
     .map(([key, value]) => {
@@ -35,7 +38,7 @@ export default function ResearchChant({ items }) {
       }}
       className="ResultList"
     >
-      <InputGroup className="mt-4 mb-0 shadow border-0 w-100 rounded rounded-3 bg-transparent text-center">
+      <InputGroup className="mt-2 mb-0 shadow border-0 w-100 rounded rounded-3 bg-transparent text-center">
         <InputGroup.Text
           id="inputGroup-sizing-sm"
           className="searchIcon fw-bold border-0  rounded-start"
@@ -85,8 +88,10 @@ export default function ResearchChant({ items }) {
                   cursor: "pointer",
                 }}
                 onClick={() => {
+                  handleCloseOffCan();
                   navigate(`/chant/${extractNumber(key)}`);
                   window.scrollTo({ top: 0, behavior: "smooth" });
+                  eraseValue();
                 }} // or custom callback
               >
                 <span
@@ -106,9 +111,3 @@ export default function ResearchChant({ items }) {
     </div>
   );
 }
-
-// Usage:
-// <ResearchComponent items={items} />
-
-// Usage example:
-// <ResearchComponent items={['Apple', 'Banana', 'Orange']} />
