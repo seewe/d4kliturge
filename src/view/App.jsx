@@ -9,7 +9,7 @@ import NavBarOffCanvas from "./components/NavBarOffCanvas";
 import Footer from "./components/Footer";
 import PageNotFound from "../pages/PageNotFound";
 import FaireUnDonMainPage from "../pages/FaireUnDonMainPage";
-import { AppProvider } from "../context/appContext";
+import { AppProvider } from "../context/AppContext";
 
 export default function App() {
   return (

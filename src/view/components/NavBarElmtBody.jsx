@@ -3,7 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { extractNumber } from "../../js/utilsFunctions";
 import { useNavigate } from "react-router";
 import { useContext } from "react";
-import { appContext } from "../../context/appContext";
+import { appContext } from "../../context/AppContext";
 
 export default function NavBarElmtBody({ navBarBodyChant }) {
   const navigate = useNavigate();

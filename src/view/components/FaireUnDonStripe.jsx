@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import modalDetail from "../../models/FaireUnDonModal";
 import { Stripe } from "react-bootstrap-icons";
-import { appContext } from "../../context/appContext";
+import { appContext } from "../../context/AppContext";
 
 export default function FaireUnDonStripe() {
   const { setTheme, setTitle, setContent, setShow } = useContext(appContext);

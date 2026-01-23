@@ -4,7 +4,7 @@ import { Search } from "react-bootstrap-icons";
 import { useNavigate } from "react-router";
 import { extractNumber } from "../../js/utilsFunctions";
 import { useContext } from "react";
-import { appContext } from "../../context/appContext";
+import { appContext } from "../../context/AppContext";
 
 export default function ResearchChant({ items }) {
   const navigate = useNavigate();

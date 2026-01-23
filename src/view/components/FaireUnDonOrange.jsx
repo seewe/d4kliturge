@@ -2,7 +2,7 @@ import { Image } from "react-bootstrap";
 import modalDetail from "../../models/FaireUnDonModal";
 import orange from "../../assets/orangemoneyico.png";
 import { useContext } from "react";
-import { appContext } from "../../context/appContext";
+import { appContext } from "../../context/AppContext";
 
 export default function FaireUnDonOrange() {
   const { setTheme, setTitle, setContent, setShow } = useContext(appContext);

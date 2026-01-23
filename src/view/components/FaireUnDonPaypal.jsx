@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import modalDetail from "../../models/FaireUnDonModal";
 import { Paypal } from "react-bootstrap-icons";
-import { appContext } from "../../context/appContext";
+import { appContext } from "../../context/AppContext";
 
 export default function FaireUnDonPaypal() {
   const { setTitle, setTheme, setContent, setShow } = useContext(appContext);

@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { appContext } from "../../context/appContext";
+import { appContext } from "../../context/AppContext";
 
 export default function FaireUnDonDetails() {
   const { show, title, content, theme, setShow } = useContext(appContext);

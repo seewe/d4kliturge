@@ -2,7 +2,7 @@ import { Image } from "react-bootstrap";
 import modalDetail from "../../models/FaireUnDonModal";
 import wise from "../../assets/wise.png";
 import { useContext } from "react";
-import { appContext } from "../../context/appContext";
+import { appContext } from "../../context/AppContext";
 
 export default function FaireUnDonWise() {
   const { setTitle, setTheme, setContent, setShow } = useContext(appContext);
