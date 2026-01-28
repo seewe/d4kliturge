@@ -48,7 +48,7 @@ export default function ResearchChant({ items }) {
         <Form.Control
           aria-label="Small"
           aria-describedby="inputGroup-sizing-sm"
-          placeholder="Cherchez un chant . . ."
+          placeholder="Chercher un chant . . ."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="researchInput border-0 rounded-end text-center fw-bold"

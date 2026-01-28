@@ -1,5 +1,5 @@
 .chant-title-container {
-  padding-top: 130px;
+  padding-top: 100px;
   padding-bottom: 10px;
   margin-bottom: 00px;
   background: linear-gradient(
@@ -19,6 +19,20 @@
     rgb(255, 255, 255) 20%,
     rgb(255, 206, 166) 60%,
     rgb(255, 255, 255) 95%
+  );
+  font-size: 16px;
+}
+
+.favorite-card-title {
+  margin: 0 0 0 3%;
+  padding: 0 5% 0 5%;
+  color: rgb(0, 0, 0);
+  border-radius: 70px 0 0 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.01) 20%,
+    rgba(255, 206, 166, 0) 60%,
+    rgba(255, 255, 255, 0) 95%
   );
   font-size: 16px;
 }
@@ -45,4 +59,38 @@
     rgba(255, 255, 255, 0.32) 90%
   );
   border-radius: 0 0 30px 30px;
+}
+
+.custom-favorite-message-add .ant-message-notice-content {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 156, 82, 1) 100%
+  ) !important;
+  color: #000000ff !important;
+  font-weight: bold !important;
+  font-size: large !important;
+  border-radius: 20px !important;
+  padding: 12px 16px !important;
+}
+.custom-favorite-message-add .anticon {
+  color: rgba(0, 0, 0, 1) !important;
+  font-size: 25px !important;
+}
+.custom-favorite-message-remove .ant-message-notice-content {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ) !important;
+  color: rgba(247, 156, 82, 1) !important;
+  font-weight: bold !important;
+  font-size: large !important;
+  border-radius: 20px !important;
+  padding: 12px 16px !important;
+}
+
+.custom-favorite-message-remove .anticon {
+  color: rgba(247, 156, 82, 1) !important;
+  font-size: 25px !important;
 }

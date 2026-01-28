@@ -4,7 +4,7 @@ export default function ButtonPulse({ label, icon, link }) {
   const navigate = useNavigate();
   return (
     <>
-      <div className="text-center px-2 rounded rounded-pill bg-transparent buttonPulse">
+      <div className="text-center px-2 rounded-3 bg-transparent buttonPulse">
         <a
           type="button"
           className="btn btn-transparent fw-bold fs-6"

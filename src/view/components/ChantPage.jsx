@@ -8,7 +8,7 @@ export default function ChantPage({ id }) {
   const ch_details = getChantDetails(id, Chants);
   return (
     <>
-      <ChantTitle titre={ch_details.titre} />
+      <ChantTitle chant={ch_details} />
       <ChantContent
         contenu={<ch_details.contenu />}
         categorie={ch_details.categorie}

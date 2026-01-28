@@ -54,9 +54,11 @@ export default function getChantDetails(num, chants) {
     };
   }
   return {
+    id: chant.id,
     titre: chant.titre,
     contenu: chant.contenu,
     categorie: chant.categorie,
+    favorite: chant.favorite,
     found: true,
   };
 }

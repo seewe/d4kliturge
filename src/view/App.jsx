@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import PageNotFound from "../pages/PageNotFound";
 import FaireUnDonMainPage from "../pages/FaireUnDonMainPage";
 import { AppProvider } from "../context/AppContext";
+import FavoriteModal from "./components/FavoritePage";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/tabledematiere" element={<TocMainPage />} />
           <Route path="/chant/:ch" element={<ChantMainPage />} />
           <Route path="/faireundon" element={<FaireUnDonMainPage />} />
+          <Route path="/favorites" element={<FavoriteModal />} />
           <Route path="*" element={<PageNotFound id={0} />} />
         </Routes>
         <Footer />
