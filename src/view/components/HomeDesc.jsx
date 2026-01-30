@@ -14,7 +14,7 @@ export default function HomeDesc() {
       initiative. Aidez nous à améliorer ce projet et n'hésitez pas à nous
       écrire{" "}
       <a
-        href="mailto:eebouele@gmail.com"
+        href="mailto:info@dataforknow.com"
         className="emaill text-decoration-none fw-bold"
       >
         <TbMailHeart size={40} />

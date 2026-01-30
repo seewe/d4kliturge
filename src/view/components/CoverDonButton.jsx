@@ -5,7 +5,7 @@ export default function CoverDonButton({ label, link }) {
   const navigate = useNavigate();
   return (
     <div
-      className="text-center rounded-3 text-white mx-5 text-justify-content"
+      className="text-center rounded-3 text-white mx-5 text-justify-content shadow"
       style={{ marginTop: "2%", marginBottom: "0%" }}
       id="don"
     >
