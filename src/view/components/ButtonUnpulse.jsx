@@ -16,7 +16,10 @@ export default function ButtonUnpulse({ label, icon, link, onClick }) {
     <>
       <div
         className="text-center p-0 rounded-3 buttonUnpulse shadow-lg"
-        style={{ backgroundColor: "rgba(250, 235, 215, 0.84)" }}
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.3)",
+          border: "solid 1px rgba(255, 255, 255, 1)",
+        }}
       >
         <a
           type="button"

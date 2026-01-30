@@ -1,5 +1,4 @@
-import { FaHandHoldingDollar, FaHandHoldingHeart } from "react-icons/fa6";
-import { PiHandHeartDuotone } from "react-icons/pi";
+import { PiHandCoinsDuotone, PiHandHeartDuotone } from "react-icons/pi";
 import { useNavigate } from "react-router";
 
 export default function CoverDonButton({ label, link }) {
@@ -17,7 +16,8 @@ export default function CoverDonButton({ label, link }) {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
-        <FaHandHoldingDollar /> {label} <PiHandHeartDuotone />
+        <PiHandCoinsDuotone size={30} /> {label}{" "}
+        <PiHandHeartDuotone size={30} />
       </a>
     </div>
   );

@@ -1,9 +1,11 @@
 import { CaretLeftFill, CaretRightFill } from "react-bootstrap-icons";
 import NavigationButton from "./NavigationButton";
 import { useEffect, useState } from "react";
+import { Chants } from "../../models/Chants";
 
 export default function NavigationFooter({ id }) {
-  const next = Math.min(Number(id) + 1, 208);
+  const totalChants = Object.keys(Chants).length;
+  const next = Math.min(Number(id) + 1, totalChants);
   const prev = Math.max(Number(id) - 1, 1);
 
   const [atBottom, setAtBottom] = useState(false);
@@ -13,7 +15,7 @@ export default function NavigationFooter({ id }) {
       const scrollable =
         document.documentElement.scrollHeight > window.innerHeight;
       const reachedBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight*0.5;
+        window.innerHeight + window.scrollY >= document.body.offsetHeight * 0.5;
 
       if (!scrollable || reachedBottom) {
         setAtBottom(true);

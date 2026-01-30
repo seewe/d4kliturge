@@ -1,4 +1,3 @@
-import { BsFillShareFill } from "react-icons/bs";
 import searchChantTitle from "../../models/searchChantTitle";
 import ButtonUnpulse from "./ButtonUnpulse";
 import CoverDonButton from "./CoverDonButton";
@@ -8,6 +7,7 @@ import { TbMusicHeart } from "react-icons/tb";
 import { HiThumbUp } from "react-icons/hi";
 import { useNavigate } from "react-router";
 import { SiGmail } from "react-icons/si";
+import { FaShareAlt } from "react-icons/fa";
 
 export default function CoverHome({ title, subtitle, imgSrc, label, link }) {
   const navigate = useNavigate();
@@ -66,7 +66,7 @@ export default function CoverHome({ title, subtitle, imgSrc, label, link }) {
           />
           <ButtonUnpulse
             label="partager"
-            icon={<BsFillShareFill className="fw-bold" size={20} />}
+            icon={<FaShareAlt className="fw-bold" size={20} />}
             onClick={handleShare}
           />
         </div>
